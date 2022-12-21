@@ -44,6 +44,7 @@ switch statement will determine the case, and open the browser.
                     WebDriverManager.chromedriver().setup();
                     ChromeOptions options = new ChromeOptions();
                     options.addArguments("--no-sandbox");
+                    options.addArguments("--headless");
                     driver = new ChromeDriver(options);
                     driver.manage().window().maximize();
                     driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
